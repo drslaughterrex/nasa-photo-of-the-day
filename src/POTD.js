@@ -20,10 +20,10 @@ const POTD = () => {
 
 	return (
 		<div className="container">
-			<h2>{photoData.title}</h2>
-			<p>{photoData.data}</p>
-			<img src={photoData.url} alt={photoData.title} />
-			<p>{photoData.explanation}</p>
+			<h2 className='title'>{photoData.title}</h2>
+			<p className='date'>{photoData.date}</p>
+			<img className='img' src={photoData.url} alt={photoData.title} />
+			<p className="explanation">{photoData.explanation}</p>
 			<p>{photoData.copyright}</p>
 		</div>
 	);
